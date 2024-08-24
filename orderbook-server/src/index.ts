@@ -1,6 +1,14 @@
-import express from 'express';
+import express from "express";
+
+
+const BASE_ASSET = 'BTC' ;
+const QUOTE_ASSET = 'USD';
 
 const app = express();
+app.use(express.json());
+
+
+
 const port = 3000;
 
 app.get('/', (req, res) => {
